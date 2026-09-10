@@ -1,22 +1,22 @@
 <template>
     <header class="top">
-        <h1>Split & Share</h1>
+        <h1>Split & Share in Vue</h1>
         <p>Split expenses and see who owes what.</p>
     </header>
 </template>
 
 <style scoped>
 .top {
-text-align: center;
-margin-bottom: 16px;
+ text-align: center;
+ margin-bottom: 16px;
 }
 
 .top h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .top p {
-    margin: 4px 0 0;
-    opacity: 0.7;
+ margin: 4px 0 0;
+ opacity: 0.7;
 }
  </style>

@@ -1,11 +1,12 @@
 <script setup>
 import Header from './components/Header.vue'
+import Card from './components/Card.vue'
 </script>
 
 <template>
   <Header/>
-    <main class="card">
-        <form id="personForm" class="rowForm">
+  <Card>
+    <form id="personForm" class="rowForm">
             <input id="personInput" type="text" placeholder="Add person's name"/>
             <button>Add Person</button>
         </form>
@@ -39,8 +40,29 @@ import Header from './components/Header.vue'
             <h3>Summary</h3>
             <ul id="summaryList" class="list"></ul>
         </section>
-    </main>
+      </Card>
 </template>
 
 <style scoped>
+.rowForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+input, select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c7d2fe;
+}
+
+button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #ec4899;
+    color: #fff;
+    cursor: pointer;
+}
 </style>
